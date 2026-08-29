@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #777;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.nav-links li:last-child a {
+    color: #5eb18f;
+    border: 1px solid #5eb18f;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+.hero {
+    min-height: 450px;
+    background-image: url("image/forest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #444;
+}
+
+/* CHASE */
+.hero h1 {
+    font-size: 68px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+    color: #444;
+}
+
+/* CLEAN, MINIMAL... */
+.hero p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0 0 38px;
+    color: #777;
+}
+
+/* Buttons container */
+.hero-buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Both buttons */
+.btn {
+    display: inline-block;
+    width: 235px;
+    padding: 18px 20px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* TRY NOW */
+.btn-primary {
+    background-color: #5db28e;
+    color: white;
+    border: 2px solid #5db28e;
+}
+
+/* LEARN MORE */
+.btn-secondary {
+    background-color: transparent;
+    color: #444;
+    border: 2px solid #444;
+}
