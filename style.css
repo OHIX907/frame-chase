@@ -63,7 +63,7 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     margin: 0 0 15px;
-    color: #444;
+    color: white;
 }
 
 /* CLEAN, MINIMAL... */
@@ -72,7 +72,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
     margin: 0 0 38px;
-    color: #777;
+    color: white;
 }
 
 /* Buttons container */
