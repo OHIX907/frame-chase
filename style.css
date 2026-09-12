@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 25px 0 15px;
+    text-align: center;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #777;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.nav-links li:last-child a {
+    color: #5eb18f;
+    border: 1px solid #5eb18f;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+.hero {
+    min-height: 500px;
+    background-image: url("image/forest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+/* CHASE */
+.hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    margin: 0 0 25px;
+    letter-spacing: 2px;
+}
+
+/* CLEAN, MINIMAL... */
+.hero p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0 0 38px;
+    color: white;
+}
+
+/* Buttons container */
+.hero-buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Both buttons */
+.btn {
+    display: inline-block;
+    width: 235px;
+    padding: 18px 20px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* TRY NOW */
+.btn-primary {
+    background-color: #5db28e;
+    color: white;
+    border: 2px solid #5db28e;
+}
+
+/* LEARN MORE */
+.btn-secondary {
+    background-color: transparent;
+    color: #444;
+    border: 2px solid #444;
+}
+.about {
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding-top: 90px;
+    margin: 0;
+}
+
+.about h2 {
+    font-size: 48px;
+    color: #444;
+    margin: 0 0 35px;
+}
+
+.about p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #61b38e;
+    margin: 0 0 80px;
+}
+
+.video-box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.video-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    height: 100px;
+
+    border: 3px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 35px;
+}
+
+.begin-btn {
+    margin: 100px 0;
+    padding: 20px 100px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #61b38e;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
