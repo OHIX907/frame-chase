@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 15px;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  color: #4CAF50;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+/* TEAM */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.member {
+  max-width: 250px;
+}
+.member img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.member h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.member p {
+  color: #777;
+  margin-bottom: 15px;
+}
+.socials a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  line-height: 35px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+/* PORTFOLIO */
+.portfolio { 
+  background: #fafafa; 
+  padding: 100px 0;
+}
+.portfolio .container {
+  max-width: 650px; /* Not too wide so image looks good */
+}
+.portfolio-grid { 
+  display: flex;
+  flex-direction: column; /* STACK DOWN */
+  gap: 50px; /* space between each image */
+}
+.portfolio-item img { 
+  width: 100%; /* full width of container */
+  height: auto; /* keep original image ratio */
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12); /* nice shadow like medialoot */
+  display: block;
+}
+/* SUBSCRIBE */
+.subscribe {
+  background: #4CAF50;
+  color: #fff;
+}
+.subscribe h2, .subscribe p {
+  color: #fff;
+}
+.subscribe form {
+  max-width: 400px;
+  margin: 30px auto 0;
+}
+.subscribe input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.subscribe button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  color: #4CAF50;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* SERVICES */
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.price-card {
+  background: #fff;
+  padding: 30px 20px;
+  width: 260px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.price-card.premium {
+  background: #4CAF50;
+  color: #fff;
+}
+.price-card h3 {
+  font-size: 52px;
+  font-weight: 800;
+}
+.price-card h3 span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.price-card h4 {
+  font-size: 18px;
+  margin: 10px 0 30px;
+}
+.price-card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.price-card li {
+  padding: 10px 0;
+  color: #777;
+}
+.price-card.premium li {
+  color: #fff;
+}
+.price-card button {
+  padding: 14px 45px;
+  border: 2px solid #333;
+  background: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.price-card.premium button {
+  border-color: #fff;
+  background: #fff;
+  color: #4CAF50;
+}
+
+/* CTA */
+.cta {
+  background: #fff;
+}
+.cta button {
+  padding: 16px 55px;
+  border: none;
+  border-radius: 30px;
+  background: #4CAF50;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+}
+.logo-box {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #4CAF50;
+  border-radius: 8px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #4CAF50;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav ul { gap: 15px; }
+  section { padding: 60px 20px; }
+}

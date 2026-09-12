@@ -3,59 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Chase</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>The Team - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body> 
-    <header>
-    <nav class="navbar">
-
-        <div class="logo">
-            <img src="C:\Users\OHIX-PC\Desktop\CHASE\image\chase-logo.jpeg" alt="Chase logo">
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">TRY NOW</a></li>
-        </ul>
-
-    </nav>
-</header>
 <body>
 
-    <header>
-        <!-- navbar -->
-    </header>
+    <!-- NAVBAR + MOBILE MENU --> 
+     <header>
+        <nav class="navbar">
+            <div class="logo">CHASE</div>
+            <ul class="nav-menu">
+             <li><a href="#team">TEAM</a></li>
+             <li><a href="#portfolio">PORTFOLIO</a></li>
+             <li><a href="#services">SERVICES</a></li>
+             <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+     </header>
 
-    <section class="hero">
+     <!-- TEAM SECTION -->
+      <section class="team" id="team">
+        <h1>THE TEAM</h1>
+        <p class="subtitle">GET TO KNOW US</p>
 
-        <h1>CHASE</h1>
+         <div class="team-member">
+            <img src="assets/my.PNG" alt="john garret"> 
+            <h2>JOHN GARRET</h2>
+            <H2>Lead designer</H2>
+            <div class="socials">
+                <a href="#">f</a><a href="#">t</a><a href="#">in</a>
+            </div>
+            </div>
 
-        <p>CLEAN, MINIMAL LANDING PAGE TEMPLATE</p>
+            <div class="team-member">
+                <img src="assets/my 2.PNG" alt="Alice Mills">
+                <h2>ALICE MILLS</h2>
+                <P>Lead designer</P>
+                <div class="socials">
+                    <a href="#">f</a><a href="#">t</a><a href="#">in</a>
+                </div>
+            </div>
 
-        <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">TRY NOW</a>
-            <a href="#" class="btn btn-secondary">LEARN MORE</a>
-        </div>
+            <div class="team-member">
+                <img src="assets/my 3.PNG" alt="Scott Harris">
+                <h2>SCOTT HARRIS</h2>
+                <P>Lead designer</P>
+                <div class="socials">
+                    <a href="#">f</a><a href="#">t</a><a href="#">in</a>
+                </div>
+            </div>
+            </section>
 
-    <section class="about">
-    <h2>WHAT IS CHASE?</h2>
+            <!-- PORTFOLIO SECTION -->
+            <section class="Portfolio" id="Portfolio">
+                <h1>PORTFOLIO</h1>
+                <p class="subtitle">OUR FEATURED WORK</p>
+                <div class="portfolio-grid">
+                    <img src="assets/work 1.PNG" alt=" work 1">
+                    <img src="assets/work 2.PNG" alt=" work 2">
+                    <img src="assets/work 3.PNG" alt=" work 3">
+                    <img src="assets/work 4.PNG" alt=" work 4">
+                    <img src="assets/work 5.PNG" alt=" work 5">
+                    <img src="assets/work 6.PNG" alt=" work 6">
+                </div>
+            </section> 
 
-    <p>WATCH OUR PROMOTIONAL VIDEO</p>
+            <!-- SUBSCRIBE SECTION -->
+             <section class="subscribe" id="content">
+                <h1>SUBSCRIBE</h1>
+                <P>STAY UP TO DATE WITH US</P>
+                <form>
+                    <input type="text" placeholder="YOUR NAME"><br><br>
+                    <input type="email" placeholder="EMAIL ADDRESS"><br><br>
+                    <button type="submit">SUBMIT</button>
+                </form>
+             </section>
 
-    <div class="video-box">
-        <img src="image/forest.jpg" alt="Forest">
-        <div class="play-button">▶</div>
-    </div>
+             <!-- PRICING SECTION -->
+              <section class="princing" id="services">
+                <h1>SERVICES</h1>
+                <p>WE DO LOTS OF COOL THINGS</p>
+                <div class="pricing-card">
+                    <h2 class="price">$<span>9</span>/MO</h2>
+                    <h3>BASIC</h3>
+                    <P>500GB STORAGE</P>
+                    <P>UNLIMITED BANDWIDTH</P>
+                    <P>10 CLIENTS</P>
+                    <P>50 PROJECTS</P>
+                    <button class="btn-outline">BEGIN</button>
+                </div>
+              </section>
 
-    <button class="begin-btn">BEGIN</button>
-</section>
+              <div class="pricing-card featured">
+                <h2 class="price">$<span>12</span>/MO</h2>
+                <h3>PREMIUM</h3>
+                <P>1TB STORAGE</P>
+                <P>UNLIMITED BANDWIDTH</P>
+                <P>50 CLIENTS</P>
+                <P>250 PROJECTS</P>
+                <button class="btn-green">BEGIN</button>
+              </div>
+
+
+             <div class="pricing-card">
+                <h2 class="price">$<span>18</span>/MO</h2>
+                <h3>ELITE</h3>
+                <P>5TP STORAGE</P>
+                <P>UNLIMITED BANDWIDTH</P>
+                <P>UNLIMITED CLIENTS</P>
+                <P>UNLIMITED PROJECTS</P>
+                <button class="btn-outline">BEGIN</button>
+             </div>
+            </section>
+
+            <!-- CTA + FOOTER -->
+             <section class="cta">
+                <h1>HEARD<br>ENOUGH?</h1>
+                <P>LET'S GET STARTED</P>
+                <button class="btn-green">BEGIN</button>
+             </section>
+              
+              <footer>
+              <div class="footer-logo"></div>
+              
+                <img src="assets/work 7.PNG" alt="work 7">
+
+                <div class="copyright">
+                    <p>COPYRIGHT 2016 @ CHASE</p>
+                    <div class="footer-links">
+                    <a href="#">contact us</a>|
+                     <a href="#">Terms $ conditions</a>|
+                     <a href="#">privacy</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#">f</a>
+                        <a href="#">t</a>
+                        <a href="#">g+</a>
+                    </div>
+                </div>
+               </footer>
+               
 </body>
-
 </html>
