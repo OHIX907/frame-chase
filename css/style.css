@@ -1,258 +1,258 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+  background:#fff;
+  text-align:center;
+}
+
+.title {
+  font-size: 54px;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle{
+  color: #5dae87;
+  font-size: 17px;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.team-list {
+  /* width: 90%; */
+  margin: 200px auto 60px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team {
+  text-align: center;
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  background: #222;
+  border-radius: 999px;
+  max-width: 100%;
+  border: 0;
+  overflow-clip-margin: content-box;
+  overflow: clip;
   text-align: center;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
+.image-container {
+  width: 100%;
+  margin: -170px auto 40px auto;
+  background-color: none;
 }
 
-/* HEADER */
-header {
+.member {
+  width: 30.66%;
   background: #fff;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 60px 0;
+  margin: 0 2%;
 }
-nav {
+
+.member:hover {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
+}
+
+h1, h2, h3, h4, h5 , h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+}
+.name {
+  font-size: 21px;
+}
+
+.position {
+  width: 80%;
+  margin: 20px auto 40px auto;
+  line-height: 1.4;
+  color: #444;
+}
+
+.social {
+  width: 164px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 3px;
-}
-nav ul {
+
+.social li {
   list-style: none;
-  display: flex;
-  gap: 30px;
-}
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 14px;
+  padding: 10%;
+  border-radius: 100%;
+  background: #e4e4e4 center no-repeat;
 }
 
-/* SECTIONS */
-section {
-  padding: 60px 15px;
-}
-h2 {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 4px;
-  margin-bottom: 10px;
-}
-.subtitle {
-  color: #4CAF50;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 60px;
+.social li a i {
+  color: #f4f4f4;
+  font-size: 16px;
+  /* background-color: #1C1C1C; */
 }
 
-/* TEAM */
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-.member {
-  max-width: 250px;
-}
-.member img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-.member h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.member p {
-  color: #777;
-  margin-bottom: 15px;
-}
-.socials a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background: #f1f1f1;
-  border-radius: 50%;
-  line-height: 35px;
-  margin: 0 5px;
-  text-decoration: none;
-  color: #666;
-  font-size: 14px;
-}
+/* SUBSCRIBE - WHITE TEXT BY FORCE */
+.subscribe { background:#5FB07F; padding:70px 20px; display:flex; flex-direction:column; align-items:center; }
+.subscribe h1 { color:white; 
+  font-size:36px; font-weight:900; }
+.subscribe input { width:90%; max-width:340px; height:46px; border:2px solid white; border-radius:30px; background:transparent; color:white; padding-left:20px; margin-bottom:12px; outline:none; }
+.subscribe input::placeholder { color:white; font-weight:700; }
+.subscribe button { width:90%; max-width:280px; height:46px; border-radius:30px; border:none; background:white; color:#5FB07F; font-weight:900; }
 
 /* PORTFOLIO */
-.portfolio { 
-  background: #fafafa; 
-  padding: 100px 0;
+.portfolio{
+  background:#f9f9f9;
+  padding:0;
+  padding-top:60px;
 }
-.portfolio .container {
-  max-width: 650px; /* Not too wide so image looks good */
-}
-.portfolio-grid { 
-  display: flex;
-  flex-direction: column; /* STACK DOWN */
-  gap: 50px; /* space between each image */
-}
-.portfolio-item img { 
-  width: 100%; /* full width of container */
-  height: auto; /* keep original image ratio */
-  border-radius: 8px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12); /* nice shadow like medialoot */
-  display: block;
-}
+.portfolio .sub{margin-bottom:20px;}
+.portfolio-images{width:100%;}
+
 /* SUBSCRIBE */
-.subscribe {
-  background: #4CAF50;
-  color: #fff;
-}
-.subscribe h2, .subscribe p {
-  color: #fff;
-}
-.subscribe form {
-  max-width: 400px;
-  margin: 30px auto 0;
-}
-.subscribe input {
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 30px;
-  font-size: 14px;
-}
-.subscribe button {
-  width: 100%;
-  padding: 16px;
-  border: none;
-  border-radius: 30px;
-  background: #fff;
-  color: #4CAF50;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
+.subscribe{
+ background: #5FB07F;
+ padding: 80px 20px;
+ display: flex;
+ flex-direction:column ;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
 }
 
-/* SERVICES */
-.pricing-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.subscribe h1{
+  color: white;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
 }
-.price-card {
-  background: #fff;
-  padding: 30px 20px;
-  width: 260px;
-  border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-.price-card.premium {
-  background: #4CAF50;
-  color: #fff;
-}
-.price-card h3 {
-  font-size: 52px;
-  font-weight: 800;
-}
-.price-card h3 span {
-  font-size: 16px;
-  font-weight: 400;
-}
-.price-card h4 {
-  font-size: 18px;
-  margin: 10px 0 30px;
-}
-.price-card ul {
-  list-style: none;
-  margin-bottom: 30px;
-}
-.price-card li {
-  padding: 10px 0;
-  color: #777;
-}
-.price-card.premium li {
-  color: #fff;
-}
-.price-card button {
-  padding: 14px 45px;
-  border: 2px solid #333;
-  background: #fff;
-  border-radius: 30px;
+
+.subscribe .stay-white{
+  color: #ffffff !important;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
+  margin: 15px 0 40px 0;
+}
+
+.subscribe input{
+  width: 100%;
+  max-width: 340px;
+  height: 48px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+  color: white;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.subscribe input::placeholder{
+  color: rgba(255,255,255,0.8);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.subscribe button{
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  background: white;
+  color: #5FB07F;
+  border: none;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 1px;
   cursor: pointer;
+  margin-top: 10px;
 }
-.price-card.premium button {
-  border-color: #fff;
-  background: #fff;
-  color: #4CAF50;
+/* SERVICES LIKE YOUR VIDEO */
+.services { width:100%; text-align:center; padding:50px 0; }
+.services h1 { font-size:32px; font-weight:900; letter-spacing:2px; }
+.services .sub { color:#6AC38A; font-size:11px; font-weight:700; letter-spacing:1px; margin:10px 0 30px; }
+
+/* Each card */
+.card { padding:35px 20px; }
+.card.gray { background:#f7f7f7; }
+
+.price { font-weight:900; display:flex; justify-content:center; align-items:flex-start; }
+.price .dollar { font-size:14px; margin-top:5px; margin-right:2px; }
+.price .num { font-size:48px; line-height:1; }
+.price .mo { font-size:12px; margin-top:15px; margin-left:4px; font-weight:700; }
+
+.card h3 { font-size:12px; font-weight:800; margin:8px 0 18px; }
+.card p { font-size:11px; color:#aaa; margin:5px 0; letter-spacing:0.5px; }
+
+.card button {
+  margin-top:22px;
+  width:140px;
+  height:36px;
+  border-radius:20px;
+  border:1.5px solid #444;
+  background:white;
+  font-size:11px;
+  font-weight:800;
+  cursor:pointer;
 }
+.card.green button {
+  background:#5FB07F;
+  color:white;
+  border-color:#5FB07F;
+}
+
+/* HEARD ENOUGH */
+.heard { padding:60px 20px; text-align:center; border-top:1px solid #eee; }
+.heard h1 { font-size:34px; font-weight:900; line-height:1.1; }
+.heard .sub { color:#5FB07F; font-size:11px; font-weight:700; margin:10px 0 20px; }
+.heard button { width:140px; height:40px; border-radius:20px; border:none; background:#5FB07F; color:white; font-weight:800; }
 
 /* CTA */
-.cta {
-  background: #fff;
-}
-.cta button {
-  padding: 16px 55px;
-  border: none;
-  border-radius: 30px;
-  background: #4CAF50;
-  color: #fff;
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-}
+.cta h1{line-height:0.95;}
+.cta .btn-green{padding:14px 40px;font-size:12px;margin-top:25px;}
 
 /* FOOTER */
-footer {
-  background: #111;
-  color: #fff;
-  padding: 60px 20px;
+footer{
+  background:#1C1C1C;
+  color:#888;
+  padding:55px 20px;
 }
-.logo-box {
-  width: 60px;
-  height: 60px;
-  border: 3px solid #4CAF50;
-  border-radius: 8px;
-  margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: #4CAF50;
+.footer-logo{
+  font-size:28px;
+  color:#6DBE8B;
+  margin-bottom:15px;
 }
-footer a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  nav ul { gap: 15px; }
-  section { padding: 60px 20px; }
-}
+footer p{font-size:10px;margin-bottom:10px;}
+.links{font-size:10px;margin-bottom:22px;}
+.links a{color:#888;text-decoration:none;}
+footer .icons a{background:#333;color:#888;}
