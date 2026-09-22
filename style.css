@@ -43,6 +43,11 @@ body {
 }
 .hero {
     min-height: 500px;
+    width: 100%;
+max-width: none;
+margin: 0;
+box-sizing: border-box;
+padding: 200px 20px;
     background-image: url("image/forest.jpg");
     background-size: cover;
     background-position: center;
@@ -52,7 +57,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
     text-align: center;
 
 }
@@ -63,7 +68,7 @@ body {
     font-weight: 700;
     color: #444;
     text-align: center;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     letter-spacing: 2px;
 }
 
@@ -73,7 +78,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
     margin: 0 0 38px;
-    color: white;
+    color: rgb(24, 23, 23);
 }
 
 /* Buttons container */
@@ -180,3 +185,505 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.services {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    background-color: #f8f8f8;
+    padding: 90px 8%;
+    text-align: center;
+
+    box-sizing: border-box;
+
+}
+
+/* Section heading */
+.section-title h2 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+.section-title p {
+    margin-top: 18px;
+    color: #5db28e;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Cards container */
+.services-container {
+    max-width: 1100px;
+    margin: 70px auto 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual card */
+.service-card {
+    background-color: white;
+
+    width: 33.333%;
+    min-height: 320px;
+
+    padding: 45px 25px 35px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Icon */
+.service-icon {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background-color: #f7f7f7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+/* Service name */
+.service-card h3 {
+    margin: 0 0 18px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #444;
+}
+
+/* Description */
+.service-card p {
+    margin: 0;
+
+    max-width: 260px;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+/* Learn more */
+.service-card a {
+    margin-top: auto;
+    padding-top: 30px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #5db28e;
+}
+
+.service-card a:hover {
+    color: #444;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .services {
+        padding: 70px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 50px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+.ideas {
+    background: white;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 100px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.ideas-image {
+    width: 50%;
+    text-align: center;
+}
+
+.ideas-image img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ideas-content {
+    width: 50%;
+}
+
+.ideas-content h2 {
+    margin: 0 0 20px;
+    font-size: 42px;
+    line-height: 1.15;
+    color: #444;
+}
+
+.ideas-content h4 {
+    margin: 0 0 30px;
+    font-size: 13px;
+    color: #5db28e;
+}
+
+.ideas-content p {
+    margin: 0 0 25px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .ideas {
+        flex-direction: column;
+        padding: 70px 25px;
+        gap: 40px;
+    }
+
+    .ideas-image,
+    .ideas-content {
+        width: 100%;
+    }
+
+    .ideas-content h2 {
+        font-size: 34px;
+    }
+
+    .ideas-image img {
+        width: 260px;
+    }
+}
+.features {
+    background-color: #5db28e;
+    padding: 80px 8%;
+    max-width: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px 70px;
+
+    box-sizing: border-box;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.feature-text h3 {
+    margin: 0 0 15px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.feature-text p {
+    margin: 0;
+
+    color: white;
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 60px 25px;
+        gap: 45px;
+    }
+
+    .feature-item {
+        gap: 18px;
+    }
+
+}
+/* =========================
+   LET'S TALK
+   ========================= */
+
+.talk {
+    width: 100%;
+    min-height: 500px;
+    padding: 80px 10%;
+    margin: 0;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+}
+
+.talk-content {
+    width: 48%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.talk-content h2 {
+    margin: 0 0 18px;
+
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 700;
+
+    color: #444;
+}
+
+.talk-content h4 {
+    margin: 0 0 32px;
+
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 700;
+
+    color: #5db28e;
+}
+
+.talk-content > p {
+    width: 100%;
+    max-width: 400px;
+
+    margin: 0 0 25px;
+
+    font-size: 13px;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+.talk-content ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.talk-content li {
+    position: relative;
+
+    margin-bottom: 13px;
+    padding-left: 30px;
+
+    max-width: 400px;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+.talk-content li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 1px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #5db28e;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SPEECH BUBBLE
+   ========================= */
+
+.talk-image {
+    width: 45%;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.bubble-back {
+    position: absolute;
+
+    width: 220px;
+    height: 140px;
+
+    background-color: #9fe0c7;
+
+    border: 3px solid #5db28e;
+    border-radius: 50px 50px 50px 15px;
+
+    transform: translate(-30px, 30px);
+}
+
+.bubble-front {
+    position: absolute;
+
+    width: 240px;
+    height: 155px;
+
+    background-color: white;
+
+    border: 3px solid #5db28e;
+    border-radius: 80px 80px 55px 55px;
+
+    transform: translate(15px, -10px);
+}
+
+.bubble-front::after {
+    content: "";
+
+    position: absolute;
+
+    right: 25px;
+    bottom: -28px;
+
+    width: 55px;
+    height: 35px;
+
+    background-color: white;
+
+    border-right: 3px solid #5db28e;
+    border-bottom: 3px solid #5db28e;
+
+    transform: rotate(15deg) skew(20deg);
+}
+
+.bubble-dots {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 12px;
+}
+
+.bubble-dots span {
+    width: 28px;
+    height: 28px;
+
+    background-color: #d9f2e8;
+
+    border: 3px solid #5db28e;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .talk {
+        width: 100%;
+        min-height: auto;
+
+        padding: 70px 25px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .talk-content {
+        width: 100%;
+    }
+
+    .talk-content h2 {
+        font-size: 34px;
+    }
+
+    .talk-image {
+        width: 100%;
+        min-height: 300px;
+        margin-top: 20px;
+    }
+}
+
